@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/btn_create_note"
-        android:icon="@drawable/ic_create_30"
+        android:icon="@drawable/ic_complete_30"
         android:title="노트 추가"
         app:showAsAction="always" />
 </menu>
