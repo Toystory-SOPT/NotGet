@@ -1,18 +1,16 @@
-package com.toystory.notget
+package com.toystory.notget.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.toystory.notget.R
+import com.toystory.notget.base.BaseActivity
 import com.toystory.notget.databinding.ActivityCreateBinding
 
-class CreateActivity : AppCompatActivity() {
-    lateinit var binding: ActivityCreateBinding
+class CreateActivity : BaseActivity<ActivityCreateBinding>({ ActivityCreateBinding.inflate(it)}) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCreateBinding.inflate(layoutInflater)
-        setContentView(binding.root)
         initActionBar()
     }
 
@@ -41,4 +39,5 @@ class CreateActivity : AppCompatActivity() {
             }
         }
     }
+
 }
