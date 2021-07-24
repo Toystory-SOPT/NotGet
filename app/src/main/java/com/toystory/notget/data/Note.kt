@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Note(
-    @PrimaryKey val id: Int,
+    @PrimaryKey
     @ColumnInfo val title: String,
     @ColumnInfo val startTime: String,
     @ColumnInfo val endTime: String
